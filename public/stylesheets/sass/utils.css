@@ -1,0 +1,34 @@
+/* line 1, ../../sass/sass/utils.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 10, ../../sass/sass/utils.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 14, ../../sass/sass/utils.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 18, ../../sass/sass/utils.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 22, ../../sass/sass/utils.scss */
+.right {
+  float: right;
+}
+
+/* line 26, ../../sass/sass/utils.scss */
+.left {
+  float: left;
+}

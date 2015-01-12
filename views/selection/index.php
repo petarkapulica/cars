@@ -1,31 +1,44 @@
 IZABERI
 <form id="car_selection" method="POST">
-    <select name="cars">
+    <select name="cars" class="cars_select">
+        <option selected disabled>Choose one</option>
     <?php
     foreach($this->cars as $key => $value)
     {
-        echo '<option value="' . $value["type"] . '">' . $value["type"] . '</option>';
+        echo '<option value="' . $value["id"] . '">' . $value["type"] . '</option>';
     }
     ?>
     </select>
     
-    <select name="models">
-        <option value="volvo">auto1 iz baze</option>
-        <option value="saab">auto2 iz baze</option>
-        <option value="fiat">auto3 iz baze</option>
-        <option value="audi">auto4 iz baze</option>
+    <select name="models" class="models">
+        <option selected disabled>Choose model</option>
+        
     </select>
     
     <br>
     <br>
-    Price:<br>
-    <input type="text" name="price">
+    Price
     <br>
-    Year:<br>
-    <input type="text" name="year">
+    <input type="text" name="price" >
     <br>
-    Fuel:<br>
-    <input type="text" name="fuel">
+    <select name="year" class="year">
+        <option selected disabled>Year</option>
+        <?php 
+        for($i=0;$i<30;$i++)
+        {
+            echo '<option>' . (2015 - $i) . '</option>';
+        }
+        ?>
+    </select>
+    <br>
+    <select name="fuel" class="fuel">
+        <option selected disabled>Fuel</option>
+        <option>Petrol</option>
+        <option>Dizel</option>
+        <option>Methane</option>
+        <option>Electrical</option>
+        <option>Hybrid</option>
+    </select>
     <br>
     Engine Volume:<br>
     <input type="text" name="volume">
@@ -38,5 +51,8 @@ IZABERI
     <br>
     Description:<br>
     <input type="text" name="desc">
+    
+    <br>
+    <input type="submit" name="submit" value="submit" />
     
 </form>

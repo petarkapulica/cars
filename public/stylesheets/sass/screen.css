@@ -67,14 +67,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../../sass/sass/screen.scss */
-h1 {
-  color: orange;
-  font-size: 33px;
-  text-align: center;
+/* line 2, ../../sass/sass/skin.scss */
+body {
+  color: #212121;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F0F0F0;
 }
 
-/* line 14, ../../sass/sass/screen.scss */
-.test {
-  color: blue;
+/* line 9, ../../sass/sass/skin.scss */
+.main {
+  width: 990px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+/* line 15, ../../sass/sass/skin.scss */
+.header {
+  background-color: #28292d;
+  min-height: 120px;
+}
+
+/* line 20, ../../sass/sass/skin.scss */
+.body-content {
+  background-color: white;
+  min-height: 500px;
+}
+
+/* line 25, ../../sass/sass/skin.scss */
+.footer {
+  background-color: #28292d;
+}
+
+/* line 29, ../../sass/sass/skin.scss */
+.navigation .list li {
+  float: left;
+  margin: 2px 2px 2px 1px;
+  border-right: 2px solid blue;
+  padding: 5px 10px;
+}
+
+/* line 1, ../../sass/sass/utils.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 10, ../../sass/sass/utils.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 14, ../../sass/sass/utils.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 18, ../../sass/sass/utils.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 22, ../../sass/sass/utils.scss */
+.right {
+  float: right;
+}
+
+/* line 26, ../../sass/sass/utils.scss */
+.left {
+  float: left;
 }

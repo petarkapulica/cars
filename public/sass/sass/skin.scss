@@ -1,0 +1,35 @@
+
+body {
+    color: #212121;
+    font-size: $font-size-m;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F0F0;
+}
+
+.main {
+    width:990px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: $header-color;
+    min-height: 120px;
+}
+
+.body-content {
+    background-color: $body-content-color;
+    min-height: 500px;
+}
+
+.footer {
+    background-color: $footer-color;
+}
+
+.navigation .list li {
+    float: left;
+    margin: 2px 2px 2px 1px;
+    border-right: 2px solid blue;
+    padding: 5px 10px;
+}
+
