@@ -32,3 +32,13 @@ html[xmlns] .clearfix {
 .left {
   float: left;
 }
+
+/* line 30, ../../sass/sass/utils.scss */
+.display-inline {
+  display: inline;
+}
+
+/* line 34, ../../sass/sass/utils.scss */
+.inline-list li {
+  float: left;
+}

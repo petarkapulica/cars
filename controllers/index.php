@@ -1,5 +1,8 @@
 <?php
 
+require_once 'models/landing-cars.php';
+require_once 'models/selection.php';
+
 
 class Index
 {
@@ -11,10 +14,17 @@ class Index
     }
  
     
-    public function indexAction($param)
-    {        
+    public function indexAction()
+    {   
+        $randomCars = new LandingCarsModel();
+        $this->_view->randomCars = $randomCars->getRandomCars();
+        
+        $selectionModel = new SelectionModel();
+        $this->_view->cars = $selectionModel->get_car();
+        
         $this->_view->render('index/index');
     }
+    
     
 }
 

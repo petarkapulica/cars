@@ -85,26 +85,372 @@ body {
 /* line 15, ../../sass/sass/skin.scss */
 .header {
   background-color: #28292d;
-  min-height: 120px;
+  min-height: 160px;
 }
 
 /* line 20, ../../sass/sass/skin.scss */
-.body-content {
-  background-color: white;
-  min-height: 500px;
+.header-title:hover {
+  text-shadow: 3px 3px lightslategrey;
 }
 
-/* line 25, ../../sass/sass/skin.scss */
-.footer {
-  background-color: #28292d;
+/* line 24, ../../sass/sass/skin.scss */
+.body-content {
+  background-color: white;
+  min-height: 600px;
 }
 
 /* line 29, ../../sass/sass/skin.scss */
+.footer {
+  background-color: #28292d;
+  color: white;
+  width: 990px;
+  bottom: 0;
+  min-height: 80px;
+}
+
+/* line 37, ../../sass/sass/skin.scss */
+.copyright {
+  margin-top: 30px;
+}
+
+/* line 41, ../../sass/sass/skin.scss */
+.footer-logo {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+/* line 46, ../../sass/sass/skin.scss */
+.privacy_policy {
+  margin-top: 30px;
+  margin-left: 400px;
+}
+
+/* line 51, ../../sass/sass/skin.scss */
+.terms-of-use {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+/* line 56, ../../sass/sass/skin.scss */
 .navigation .list li {
   float: left;
   margin: 2px 2px 2px 1px;
   border-right: 2px solid blue;
   padding: 5px 10px;
+}
+
+/* line 63, ../../sass/sass/skin.scss */
+.search-content {
+  min-height: 250px;
+  padding: 20px 20px 0 20px;
+}
+
+/* line 68, ../../sass/sass/skin.scss */
+.data-content {
+  max-width: 640px;
+  padding: 20px;
+}
+
+/* line 73, ../../sass/sass/skin.scss */
+.data-content-list li {
+  border: 1px solid green;
+  padding: 2px;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  position: relative;
+}
+
+/* line 81, ../../sass/sass/skin.scss */
+.data-content-list .price {
+  position: absolute;
+  right: 0px;
+  padding: 4px;
+  background-color: orange;
+}
+
+/* line 88, ../../sass/sass/skin.scss */
+.search-content .search-navigation li {
+  float: left;
+  padding: 5px 10px;
+  background-color: #e7e7e7;
+}
+
+/* line 94, ../../sass/sass/skin.scss */
+.search-content .active {
+  background-color: #F4F4F4 !important;
+}
+
+/* line 98, ../../sass/sass/skin.scss */
+.banner-tard-picture {
+  width: 300px;
+  margin-left: 20px;
+}
+
+/* line 103, ../../sass/sass/skin.scss */
+.head-news {
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  background-color: #F0F0F0;
+  font-size: 14px;
+  max-width: 240px;
+}
+
+/* line 111, ../../sass/sass/skin.scss */
+.head-news li {
+  padding: 3px;
+  color: #28292d;
+  margin-bottom: 5px;
+}
+
+/* line 117, ../../sass/sass/skin.scss */
+.header-pic {
+  width: 250px;
+  height: 160px;
+  opacity: 0.5;
+}
+
+/* line 123, ../../sass/sass/skin.scss */
+.header-pic:hover {
+  opacity: 1;
+}
+
+/* line 127, ../../sass/sass/skin.scss */
+.header-title {
+  font-family: 'Iglesia-Light';
+  color: white;
+  font-size: 24px;
+  margin: 50px 50px 20px 50px;
+}
+
+/* line 134, ../../sass/sass/skin.scss */
+.search-content-minimized {
+  border: 2px solid lightblue;
+  margin: 5px 5px 5px 5px;
+  min-height: 600px;
+  width: 200px;
+}
+
+/* line 141, ../../sass/sass/skin.scss */
+.found-cars {
+  margin: 15px 15px 15px 15px;
+  min-height: 600px;
+  width: 550px;
+}
+
+/* line 147, ../../sass/sass/skin.scss */
+.found-cars-banners {
+  min-height: 600px;
+  width: 180px;
+}
+
+/* line 152, ../../sass/sass/skin.scss */
+.found-cars-banners img {
+  width: 170px;
+  height: 170px;
+}
+
+/* line 157, ../../sass/sass/skin.scss */
+.found-cars-header {
+  background-color: #F4F4F4;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* line 164, ../../sass/sass/skin.scss */
+.found-cars-nav {
+  background-color: #F4F4F4;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+/* line 171, ../../sass/sass/skin.scss */
+.found-car {
+  background-color: #F4F4F4;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+
+/* line 179, ../../sass/sass/skin.scss */
+.found-car:hover {
+  background-color: lightpink;
+}
+
+/* line 183, ../../sass/sass/skin.scss */
+.found-car-header {
+  position: relative;
+  margin: 5px 5px 20px 5px;
+}
+
+/* line 188, ../../sass/sass/skin.scss */
+.found-car-price {
+  position: absolute;
+  right: 0px;
+  padding: 4px;
+  background-color: orange;
+}
+
+/* line 195, ../../sass/sass/skin.scss */
+.found-car-image {
+  width: 200px;
+}
+
+/* line 198, ../../sass/sass/skin.scss */
+.found-car-desc {
+  width: 300px;
+}
+
+/* line 202, ../../sass/sass/skin.scss */
+.found-car-picture-quantity {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* line 207, ../../sass/sass/skin.scss */
+.car-content {
+  margin: 5px 5px 5px 5px;
+  min-height: 600px;
+  width: 800px;
+}
+
+/* line 213, ../../sass/sass/skin.scss */
+.car-header {
+  font-size: 20px;
+  margin: 15px 15px 15px 15px;
+  padding: 15px;
+}
+
+/* line 219, ../../sass/sass/skin.scss */
+.car-content-nav-title {
+  width: 138px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffa210;
+  border: 1px solid #ffa210;
+  padding: 10px;
+}
+
+/* line 228, ../../sass/sass/skin.scss */
+.car-content-nav-title:hover {
+  background-color: #82c430;
+  color: white;
+}
+
+/* line 233, ../../sass/sass/skin.scss */
+.car-content-details-img {
+  margin: 10px;
+  width: 320px;
+}
+
+/* line 238, ../../sass/sass/skin.scss */
+.car-content-details-img > div {
+  margin-left: 4px;
+}
+
+/* line 242, ../../sass/sass/skin.scss */
+.car-content-details-list {
+  width: 190px;
+}
+
+/* line 246, ../../sass/sass/skin.scss */
+.car-content-details-list h2 {
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  margin: 15px 0 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 256, ../../sass/sass/skin.scss */
+.car-content-details-list ul li {
+  margin: 5px;
+}
+
+/* line 260, ../../sass/sass/skin.scss */
+.car-content-details-contact {
+  background-color: #e7e7e7;
+  border: 2px solid #d3d3d1;
+  margin: 15px 5px 0 15px;
+  width: 246px;
+}
+
+/* line 267, ../../sass/sass/skin.scss */
+.car-content-details-contact li {
+  margin: 10px;
+}
+
+/* line 271, ../../sass/sass/skin.scss */
+.car-content-details-contact h2 {
+  color: #EC9C1E;
+  font-size: 16px;
+  margin: 10px 10px 15px 15px;
+  text-decoration: underline;
+}
+
+/* line 278, ../../sass/sass/skin.scss */
+.car-content-details-contact p {
+  color: #0066CC;
+  margin: 10px;
+}
+
+/* line 283, ../../sass/sass/skin.scss */
+.car-content-details-contact li {
+  margin: 10px 10px 10px 30px;
+}
+
+/* line 287, ../../sass/sass/skin.scss */
+.additional {
+  width: 600px;
+  margin: 15px;
+}
+
+/* line 293, ../../sass/sass/skin.scss */
+.additional h2 {
+  border-bottom: 1px solid green;
+  color: goldenrod;
+  font-size: 16px;
+}
+
+/* line 299, ../../sass/sass/skin.scss */
+.additional-info ul li {
+  margin: 10px;
+}
+
+/* line 303, ../../sass/sass/skin.scss */
+.add-info1 {
+  width: 400px;
+}
+
+/* line 307, ../../sass/sass/skin.scss */
+.add-info2 {
+  width: 200px;
+}
+
+/* line 311, ../../sass/sass/skin.scss */
+.safety {
+  width: 600px;
+  height: 200px;
+  margin: 15px;
+}
+
+/* line 317, ../../sass/sass/skin.scss */
+.safety h2 {
+  border-bottom: 1px solid green;
+  color: goldenrod;
+  font-size: 16px;
+}
+
+/* line 324, ../../sass/sass/skin.scss */
+.safety ul li {
+  list-style: disc;
+  margin: 10px;
+  height: 20px;
+  float: left;
 }
 
 /* line 1, ../../sass/sass/utils.scss */
@@ -140,4 +486,76 @@ html[xmlns] .clearfix {
 /* line 26, ../../sass/sass/utils.scss */
 .left {
   float: left;
+}
+
+/* line 30, ../../sass/sass/utils.scss */
+.display-inline {
+  display: inline;
+}
+
+/* line 34, ../../sass/sass/utils.scss */
+.inline-list li {
+  float: left;
+}
+
+/* line 1, ../../sass/sass/forms.scss */
+.form-inline .form-group {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px 5px 5px 5px;
+}
+
+/* line 7, ../../sass/sass/forms.scss */
+.form-holder {
+  background-color: lightyellow;
+  max-width: 600px;
+}
+
+/* line 12, ../../sass/sass/forms.scss */
+.search-form label {
+  display: block;
+}
+
+/* line 16, ../../sass/sass/forms.scss */
+.search-form .small {
+  width: 100px;
+}
+
+/* line 20, ../../sass/sass/forms.scss */
+.search-form .large {
+  width: 200px;
+}
+
+/* line 24, ../../sass/sass/forms.scss */
+.search-form .middle {
+  width: 150px;
+}
+
+/* line 28, ../../sass/sass/forms.scss */
+.search-form input, .search-form select {
+  height: 25px;
+}
+
+/* line 32, ../../sass/sass/forms.scss */
+.search-form input[type="submit"] {
+  background: url("../../images/search-button-eng.jpg") no-repeat scroll -3px 1px transparent;
+  cursor: pointer;
+  height: 50px;
+  width: 186px;
+  text-align: left;
+  text-indent: -1000px;
+  border: none;
+}
+
+/* line 42, ../../sass/sass/forms.scss */
+.search-form input[type="submit"]:hover {
+  background: url("../../images/search-button-eng.jpg") no-repeat scroll -3px -91px transparent;
+}
+
+/* line 1, ../../sass/sass/buttons.scss */
+.btn-primary {
+  cursor: pointer;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
 }

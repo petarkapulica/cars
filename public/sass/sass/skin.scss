@@ -14,16 +14,43 @@ body {
 
 .header {
     background-color: $header-color;
-    min-height: 120px;
+    min-height: 160px;
+}
+
+.header-title:hover {
+    text-shadow: 3px 3px lightslategrey;
 }
 
 .body-content {
     background-color: $body-content-color;
-    min-height: 500px;
+    min-height: 600px;
 }
 
 .footer {
     background-color: $footer-color;
+    color: white;
+    width: 990px;
+    bottom: 0;
+    min-height: 80px;
+}
+
+.copyright {
+    margin-top: 30px;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.privacy_policy {
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+.terms-of-use {
+    margin-top: 30px;
+    margin-left: 100px;
 }
 
 .navigation .list li {
@@ -33,3 +60,270 @@ body {
     padding: 5px 10px;
 }
 
+.search-content {
+    min-height: 250px;
+    padding: 20px 20px 0 20px;
+}
+
+.data-content {
+    max-width: 640px;
+    padding: 20px;
+}
+
+.data-content-list li{
+    border: 1px solid green;
+    padding: 2px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    position:relative;
+}
+
+.data-content-list .price{
+    position:absolute;
+    right: 0px;
+    padding: 4px;
+    background-color: $price-color;
+}
+
+.search-content .search-navigation li {
+    float: left;
+    padding: 5px 10px;
+    background-color: $main-content-color;
+}
+
+.search-content .active {
+    background-color: $main-content-active !important;
+}
+
+.banner-tard-picture {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.head-news {
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    background-color: #F0F0F0;
+    font-size: $font-size-l;
+    max-width: 240px;
+}
+
+.head-news li {
+    padding: 3px;
+    color: $header-color;
+    margin-bottom: 5px;
+}
+
+.header-pic {
+    width:250px;
+    height:160px;
+    opacity: 0.5;
+}
+
+.header-pic:hover {
+    opacity: 1;
+}
+
+.header-title {
+    font-family: 'Iglesia-Light';
+    color: $body-content-color;
+    font-size: $font-size-7xl;
+    margin: 50px 50px 20px 50px;
+}
+
+.search-content-minimized {
+    border: 2px solid lightblue;
+    margin: 5px 5px 5px 5px;
+    min-height: 600px;
+    width: 200px;
+}
+
+.found-cars {
+    margin: 15px 15px 15px 15px;
+    min-height: 600px;
+    width: 550px;
+}
+
+.found-cars-banners {
+    min-height: 600px;
+    width: 180px;
+}
+
+.found-cars-banners img {
+    width:170px;
+    height:170px;
+}
+
+.found-cars-header {
+    background-color: $main-content-active;
+    font-size: $font-size-xl;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.found-cars-nav {
+    background-color: $main-content-active;
+    font-size: $font-size-l;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.found-car {
+    background-color: $main-content-active;
+    font-size: $font-size-l;
+    padding: 5px;
+    margin-bottom: 10px;
+    min-height: 150px;
+}
+
+.found-car:hover {
+    background-color: $car-hover-color;
+}
+
+.found-car-header {
+    position: relative;
+    margin: 5px 5px 20px 5px;
+}
+
+.found-car-price {
+    position:absolute;
+    right: 0px;
+    padding: 4px;
+    background-color: $price-color;
+}
+
+.found-car-image {
+    width: 200px;
+}
+.found-car-desc {
+    width: 300px;
+}
+
+.found-car-picture-quantity {
+    margin-top: 10px;
+    font-size: $font-size-m;
+}
+
+.car-content {
+    margin: 5px 5px 5px 5px;
+    min-height: 600px;
+    width: 800px;
+}
+
+.car-header {
+    font-size: $font-size-3xl;
+    margin: 15px 15px 15px 15px;
+    padding: 15px;
+}
+
+.car-content-nav-title {
+    width: 138px;
+    text-align: center;
+    font-size: $font-size-xl;
+    color:$car-nav-color;
+    border: 1px solid $car-nav-color;
+    padding: 10px;
+}
+
+.car-content-nav-title:hover {
+    background-color:#82c430;
+    color: white;
+}
+
+.car-content-details-img {
+    margin: 10px;
+    width:320px;
+}
+
+.car-content-details-img > div {
+    margin-left:4px;
+}
+
+.car-content-details-list {
+    width: 190px;
+}
+
+.car-content-details-list h2 {
+    padding: 10px;
+    background-color: $price-color;
+    color: white;
+    text-align: center;
+    margin: 15px 0 15px 0;
+    font-size: $font-size-xl;
+    font-weight: bold;
+}
+
+.car-content-details-list ul li {
+    margin: 5px;
+}
+
+.car-content-details-contact {
+    background-color: #e7e7e7;
+    border: 2px solid #d3d3d1;
+    margin: 15px 5px 0 15px;
+    width: 246px;
+}
+
+.car-content-details-contact li {
+    margin: 10px;
+}
+
+.car-content-details-contact h2 {
+    color: #EC9C1E;
+    font-size: $font-size-xl;
+    margin: 10px 10px 15px 15px;
+    text-decoration: underline;
+}
+
+.car-content-details-contact p {
+    color: #0066CC;
+    margin:10px;
+}
+
+.car-content-details-contact li {
+    margin:10px 10px 10px 30px;
+}
+
+.additional {
+    width: 600px;
+    margin: 15px;
+    
+}
+
+.additional h2 {
+    border-bottom: 1px solid green;
+    color: goldenrod;
+    font-size: $font-size-xl;
+}
+
+.additional-info ul li {
+    margin:10px;
+}
+
+.add-info1 {
+    width:400px;
+}
+
+.add-info2 {
+    width: 200px;
+}
+
+.safety {
+    width: 600px;
+    height: 200px;
+    margin: 15px;
+}
+
+.safety h2 {
+    border-bottom: 1px solid green;
+    color: goldenrod;
+    font-size: $font-size-xl;
+}
+
+
+.safety ul li {
+    list-style: disc;
+    margin: 10px;
+    height: 20px;
+    float: left;
+}
