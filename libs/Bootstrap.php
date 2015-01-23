@@ -8,8 +8,9 @@ class Bootstrap {
     private $_params = null;
 
     function __construct() {  
-       $url = $_SERVER["REQUEST_URI"];   
-       $url = explode("/",$url);
+       $url = $_SERVER["REQUEST_URI"]; 
+       $url = explode("?",$url);
+       $url = explode("/",$url[0]);
        foreach ($url as $u)
        {
            if(!empty($u) && $u!=='cars')
@@ -72,6 +73,9 @@ class Bootstrap {
         $controller = new $this->_controller(); 
         $action = $this->_action . "Action";        
         
+        $controller->view = new View();
+        $controller->view->path = $this->_controller.'/'.$this->_action;
+
         if(method_exists($controller, $action))
         {   
             $controller->{$action}($this->_params); 

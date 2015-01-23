@@ -19,9 +19,10 @@ class Selection extends Session {
             $photosModel->upload($carId, $_FILES);
         }
         
-        $this->_view->cars = $selectionModel->get_car();
+        $this->view->cars = $selectionModel->get_car();
         
-        $this->_view->render('selection/index', true);
+        $this->view->setLayout("admin");
+        $this->view->render();
     }
     
     function cartypeAction()
@@ -36,14 +37,15 @@ class Selection extends Session {
         $fileName = $_FILES["car_images"]["name"];
         
         $uploadfile = $uploaddir . basename($fileName);
-
         
-        if (move_uploaded_file($_FILES['car_images']['tmp_name'], $uploadfile)) {
+        if (move_uploaded_file($_FILES['car_images']['tmp_name'], $uploadfile)) 
+        {
             echo json_encode(array(
                 "status" => true,
                 "photo_name" => $fileName
             ));
-        } else {
+        } else 
+        {
             echo json_encode(array(
                 "status" => false,
                 "message" => 'file could not be uploaded'

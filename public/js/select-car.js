@@ -11,7 +11,7 @@ carSelection.prototype = {
         $('.js_models').html('');
         var car = $(event.currentTarget).val();
         $.ajax({
-                url: "http://localhost/cars/selection/cartype",
+                url: "/cars/selection/cartype",
                 type: "POST",
                 success: $.proxy(this.onSuccess,this, car)
             }); 

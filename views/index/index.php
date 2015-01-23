@@ -7,10 +7,10 @@
                     <li><a href="offerno">Offer no</a></li>
                 </ul>
                 
-                <form action="#" class="search-form form-inline">
+                <form action="/search" method="GET" class="search-form form-inline">
                     <div class="form-group">
                         <label>Car</label>
-                        <select class="large js_car_select">
+                        <select name="car" class="large js_car_select">
                         <option selected disabled>Pick</option>
                             <?php
                             foreach($this->cars as $key => $value)
@@ -22,11 +22,11 @@
                     </div>
                     <div class="form-group">
                         <label>Model</label>
-                        <select class="large js_models" disabled="true"><option>Pick</option></select>
+                        <select class="large js_models" name="model" disabled="true"><option>Pick</option></select>
                     </div>
                     <div class="form-group">
                         <label>Body</label>
-                        <select class="middle">
+                        <select class="middle" name="body">
                             <option selected disabled>Pick</option>
                             <option>Hatchback</option>
                             <option>Van/Minivan</option>
@@ -38,15 +38,16 @@
                     </div>
                     <div class="form-group">
                         <label>Price from</label>
-                        <input class="middle" type="number" />&#8364
+                        <input class="middle" name="numberlow" type="number" />&#8364
                     </div>
                     <div class="form-group">
                         <label>Price to</label>
-                        <input class="middle" type="number" />&#8364
+                        <input class="middle" name="numberhigh" type="number" />&#8364
                     </div>
                     <div class="form-group">
                         <label>Release date ( from - to )</label>
-                        <select class="small">
+                        <select class="small" name="yearlow">
+                            <option selected disabled>Pick</option>
                             <?php
                              $current_year = date("Y");
                              for($i = $current_year;$i>1980;$i--)
@@ -55,7 +56,8 @@
                              }
                             ?>
                         </select>
-                        <select class="small">
+                        <select class="small" name="yearhigh">
+                            <option selected disabled>Pick</option>
                             <?php
                              $current_year = date("Y");
                              for($i = $current_year;$i>1980;$i--)
@@ -67,7 +69,7 @@
                     </div>
                     <div class="form-group">
                         <label>Fuel</label>
-                        <select class="large">
+                        <select class="large" name="fuel">
                             <option selected disabled>Pick</option>
                             <option>Diesel</option>
                             <option>Gasoline</option>
@@ -78,7 +80,7 @@
                     </div>
                     <div class="form-group">
                         <label>Region</label>
-                        <select class="large">
+                        <select class="large" name="region">
                             <option selected disabled>Pick</option>
                             <option>Europe</option>
                             <option>Asia</option>
@@ -89,7 +91,7 @@
                     </div>
                     <div class="form-group">
                         <label>Payment</label>
-                        <select class="middle">
+                        <select class="middle" name="payment">
                             <option selected disabled>Pick</option>
                             <option>Cash</option>
                             <option>Credit</option>
@@ -98,7 +100,7 @@
                     </div>
                     <div class="form-group">
                         <label>Look for</label>
-                        <select class="large">
+                        <select class="large" name="lookfor">
                             <option>Used and new</option>
                             <option>Only new</option>
                             <option>Only used</option>
@@ -106,7 +108,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <input type="submit"/>
+                        <input type="submit" name="submit"/>
                     </div>
                 </form>
                 
@@ -128,7 +130,7 @@
                             $html .= '<span class="price">';
                             $html .= $value['price'];
                             $html .= '</span>';
-                            $html .= '<a href="#" class="clearfix">';
+                            $html .= '<a href="/car/details/' . $value["id"]. '"' . ' class="clearfix">';
                             $html .= '<img src="public/images/cars/';
                             $html .= $value[0][0]['image_name'];
                             $html .= '"></a>';

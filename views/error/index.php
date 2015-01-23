@@ -1,1 +1,1 @@
-ERROR
+<img src="http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzA0L2VlLzM1ZW50ZXJ0YWluLmIyOS5qcGcKcAl0aHVtYgk5NTB4NTM0IwplCWpwZw/da6607ac/8e3/35-entertaining-404-error-pages-b35e85a988.jpg"/>

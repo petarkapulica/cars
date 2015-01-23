@@ -1,0 +1,45 @@
+.form-inline .form-group {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 5px 5px 5px;
+}
+
+.form-holder {
+    background-color: lightyellow;    
+    max-width: 600px;
+}
+
+.search-form label {
+    display: block;
+}
+
+.search-form .small {
+    width: 100px;
+}
+
+.search-form .large {
+    width: 200px;
+}
+
+.search-form .middle {
+    width: 150px;
+}
+
+.search-form input, .search-form select {
+    height:25px;
+}
+
+.search-form input[type="submit"] {
+    background: url("../../images/search-button-eng.jpg") no-repeat scroll  -3px 1px  transparent;
+    cursor: pointer;
+    height: 50px;
+    width: 186px;
+    text-align: left;
+    text-indent: -1000px;
+    border:none;
+}
+
+.search-form input[type="submit"]:hover{
+    background: url("../../images/search-button-eng.jpg") no-repeat scroll -3px -91px  transparent;
+}
+ 

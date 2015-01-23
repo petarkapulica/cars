@@ -13,7 +13,7 @@ class Session {
 //           header("location:http://localhost/cars/index");
         }
         
-        $this->_view = new View();
+
     }
 
 }
