@@ -1,5 +1,4 @@
-
-IZABERI
+INSERT
 <form id="car_selection" enctype="multipart/form-data" method="POST">
     <select name="cars" class="js_car_select">
         <option selected disabled>Choose one</option>
@@ -34,25 +33,31 @@ IZABERI
     <br>
     
     <br>
-    Configuration:<br>
+    Body:<br>
     <select name="config">
-        <option>limuzina</option>
-        <option>hecbek</option>
-        <option>karavan</option>
-        <option>kupe</option>
+        <option selected disabled>Pick</option>
+        <option>Hatchback</option>
+        <option>Van/Minivan</option>
+        <option>Coupe</option>
+        <option>Sedan</option>
+        <option>Luxury</option>
+        <option>Convertible</option>
     </select>
     <br>
-    
+    Fuel:
+    <br>
     <select name="fuel" class="fuel">
-        <option value="petrol">Petrol</option>
-        <option value="dizel">Dizel</option>
-        <option value="methane">Methane</option>
-        <option value="electrical">Electrical</option>
-        <option value="hybrid">Hybrid</option>
+        <option selected disabled>Pick</option>
+        <option>Diesel</option>
+        <option>Gasoline</option>
+        <option>Gas</option>
+        <option>Methane</option>
+        <option>Hybride</option>
     </select>
     
     <br>
-    
+    Price:
+    <br>
     <select name="fixed" class="fixed">
         <option>Fixed price</option>
         <option>Not fixed price</option>

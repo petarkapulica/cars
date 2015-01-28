@@ -4,6 +4,13 @@ class PhotosModel extends Model {
     
     private $uploadDir = "public/images/cars/";
     
+    static $imageSizes = [
+        "thumb" => 100,
+        "s"     => 144,
+        "m"     => 308,
+        "l"     => 800
+    ];
+    
     private $photos = array();
 
     public function upload($carId, $files){
@@ -11,6 +18,17 @@ class PhotosModel extends Model {
              ->insert($carId);   
     }
     
+    public static function getDerivate($size, $imageName)
+    {
+        return $_SERVER['DOCUMENT_ROOT'].'public/images/cars_'.$size.'/'.$imageName;
+    }
+    
+    public static function getOriginal($imageName)
+    {
+        return $_SERVER['DOCUMENT_ROOT'].'public/images/cars/'. $imageName;
+    }
+
+
     private function uploadPhotos($files)
     {
         foreach ($files as $file)

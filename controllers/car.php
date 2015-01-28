@@ -1,6 +1,6 @@
 <?php
 
-require_once 'models/cars.php';;
+require_once 'models/cars.php';
 
 class Car extends Session {
 
@@ -19,3 +19,4 @@ class Car extends Session {
     }
 
 }
+

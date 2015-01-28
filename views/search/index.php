@@ -112,8 +112,20 @@
                 <strong>Cars</strong>
             </div>
             <div class="found-cars-nav">
-                <p> Shown 1 out of <?php echo count($this->searchedCars);  ?> results</p>
-                <p>1 2 3 4</p>
+                <p> Shown 1 out of <?php echo $this->count;?> results</p>
+                <p>
+                    <?php
+                    $perPage = $this->perPage;
+                    $count = $this->count;
+                    $pages = ceil($count/$perPage);
+                    $url = $_SERVER['REQUEST_URI'];
+                    $url = preg_replace('/&?page=[0-9]+&?/', '', $url); 
+                    for($page = 1; $page <= $pages; $page++)
+                    {
+                        echo '<a href="' . $url . '&page=' . $page .'"> ' . $page . ' </a>';
+                    } 
+                    ?>
+                </p>
             </div>
             
             <?php
@@ -135,21 +147,26 @@
                 $html .= '</span>';
                 $html .= '</div>';
                 $html .= '<div class="found-car-details clearfix">
-                        <div class="found-car-image left">
-                            <img src="';
-                $html .= 'http://images2.polovniautomobili.com/user-images/classifieds/579/5793807/699c6f0a601a-120x90.jpg';
-                $html .= '" /></div>';
+                        <div class="found-car-image left"><a href="../car/details/';
+                $html .= $value["id"] . '">';
+                $html .= '<img src="';
+                $html .= '/image?img-name=';
+                $html .= $value["images"][0];
+                $html .= "&size=s";
+                $html .= '" /></a></div>';
                 $html .= '<div class="found-car-desc left">';
-                $html .= ' Karavan
-                                Srebrna metalik, 4/5 vrata, 5 sedišta
-                                Dizel, 125kW (170KS), Manuelni 6 brzina
-                                Automatska klima, Servisna knjiga, Xenon svetla, ASR
-                                Južno-banatski okrug, 26000 Pančevo
-                                Datum objave: 15.01.2015.';
+                $html .= "Configuration: {$value['config']},
+                          Color: {$value['color']},
+                          Doors: {$value['doors']} doors, 
+                          Seats: {$value['seats']} seats,
+                          Fuel:  {$value['fuel']}, 
+                          Power: {$value['horsepower']} HP, 
+                          Transmission: {$value['transmission']},
+                          Airconditioning: {$value['ac']} .";
                 $html .= '</div>';
                 $html .= '</div>';
                 $html .= '<div class="found-car-picture-quantity">';
-                $html .= '4 slike';
+                $html .= sizeof($value["images"]) . ' pics';
                 $html .= '</div>';
                 $html .= '</div>';
                 echo $html;

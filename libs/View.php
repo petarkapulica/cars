@@ -7,7 +7,7 @@ class View {
     private $layout = "main";
 
     public function render()
-    {        
+    {      
         require_once 'views/layouts/'. $this->layout .'.php';
     }
     

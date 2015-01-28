@@ -12,10 +12,15 @@ class Search extends Session {
     function indexAction()
     {
         $selectionModel = new SelectionModel();
-        $this->view->cars = $selectionModel->get_car();
+        $this->view->cars = $selectionModel->getCar();
         
         $searchedCars = new CarModel();
-        $this->view->searchedCars = $searchedCars->getCars($_GET);
+        
+        $this->view->cars = $searchedCars->searchCars($_GET);
+        
+        $this->view->searchedCars = $searchedCars->searchCars($_GET);
+        $this->view->count = $searchedCars->carsNumber;
+        $this->view->perPage = $searchedCars->perPage;
         
         $this->view->render();
     }

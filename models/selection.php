@@ -3,7 +3,7 @@
 class SelectionModel extends Model {
     public $db;
     
-    public function get_car()
+    public function getCar()
     {
         $sql = "SELECT * FROM car";
         $stmt = $this->db->prepare($sql);
@@ -11,7 +11,7 @@ class SelectionModel extends Model {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     
-    public function get_model()
+    public function getModel()
     {
         $sql = "SELECT * FROM model";
         $stmt = $this->db->prepare($sql);
@@ -19,7 +19,7 @@ class SelectionModel extends Model {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     
-    public function insert_car($data)
+    public function insertCar($data)
     {
          $sql = "INSERT INTO model_data(
                 model_id,

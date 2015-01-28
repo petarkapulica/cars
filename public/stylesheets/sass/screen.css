@@ -161,6 +161,13 @@ body {
 }
 
 /* line 81, ../../sass/sass/skin.scss */
+.data-content-list img {
+  width: 144px;
+  height: 108px;
+  overflow: hidden;
+}
+
+/* line 87, ../../sass/sass/skin.scss */
 .data-content-list .price {
   position: absolute;
   right: 0px;
@@ -168,25 +175,25 @@ body {
   background-color: orange;
 }
 
-/* line 88, ../../sass/sass/skin.scss */
+/* line 94, ../../sass/sass/skin.scss */
 .search-content .search-navigation li {
   float: left;
   padding: 5px 10px;
   background-color: #e7e7e7;
 }
 
-/* line 94, ../../sass/sass/skin.scss */
+/* line 100, ../../sass/sass/skin.scss */
 .search-content .active {
   background-color: #F4F4F4 !important;
 }
 
-/* line 98, ../../sass/sass/skin.scss */
+/* line 104, ../../sass/sass/skin.scss */
 .banner-tard-picture {
   width: 300px;
   margin-left: 20px;
 }
 
-/* line 103, ../../sass/sass/skin.scss */
+/* line 109, ../../sass/sass/skin.scss */
 .head-news {
   margin: 10px 10px 10px 10px;
   padding: 10px;
@@ -195,26 +202,26 @@ body {
   max-width: 240px;
 }
 
-/* line 111, ../../sass/sass/skin.scss */
+/* line 117, ../../sass/sass/skin.scss */
 .head-news li {
   padding: 3px;
   color: #28292d;
   margin-bottom: 5px;
 }
 
-/* line 117, ../../sass/sass/skin.scss */
+/* line 123, ../../sass/sass/skin.scss */
 .header-pic {
   width: 250px;
   height: 160px;
   opacity: 0.5;
 }
 
-/* line 123, ../../sass/sass/skin.scss */
+/* line 129, ../../sass/sass/skin.scss */
 .header-pic:hover {
   opacity: 1;
 }
 
-/* line 127, ../../sass/sass/skin.scss */
+/* line 133, ../../sass/sass/skin.scss */
 .header-title {
   font-family: 'Iglesia-Light';
   color: white;
@@ -222,7 +229,7 @@ body {
   margin: 50px 50px 20px 50px;
 }
 
-/* line 134, ../../sass/sass/skin.scss */
+/* line 140, ../../sass/sass/skin.scss */
 .search-content-minimized {
   border: 2px solid lightblue;
   margin: 5px 5px 5px 5px;
@@ -230,26 +237,26 @@ body {
   width: 200px;
 }
 
-/* line 141, ../../sass/sass/skin.scss */
+/* line 147, ../../sass/sass/skin.scss */
 .found-cars {
   margin: 15px 15px 15px 15px;
   min-height: 600px;
   width: 550px;
 }
 
-/* line 147, ../../sass/sass/skin.scss */
+/* line 153, ../../sass/sass/skin.scss */
 .found-cars-banners {
   min-height: 600px;
   width: 180px;
 }
 
-/* line 152, ../../sass/sass/skin.scss */
+/* line 158, ../../sass/sass/skin.scss */
 .found-cars-banners img {
   width: 170px;
   height: 170px;
 }
 
-/* line 157, ../../sass/sass/skin.scss */
+/* line 163, ../../sass/sass/skin.scss */
 .found-cars-header {
   background-color: #F4F4F4;
   font-size: 16px;
@@ -257,7 +264,7 @@ body {
   padding: 10px;
 }
 
-/* line 164, ../../sass/sass/skin.scss */
+/* line 170, ../../sass/sass/skin.scss */
 .found-cars-nav {
   background-color: #F4F4F4;
   font-size: 14px;
@@ -265,7 +272,7 @@ body {
   padding: 10px;
 }
 
-/* line 171, ../../sass/sass/skin.scss */
+/* line 177, ../../sass/sass/skin.scss */
 .found-car {
   background-color: #F4F4F4;
   font-size: 14px;
@@ -274,18 +281,18 @@ body {
   min-height: 150px;
 }
 
-/* line 179, ../../sass/sass/skin.scss */
+/* line 185, ../../sass/sass/skin.scss */
 .found-car:hover {
   background-color: lightpink;
 }
 
-/* line 183, ../../sass/sass/skin.scss */
+/* line 189, ../../sass/sass/skin.scss */
 .found-car-header {
   position: relative;
   margin: 5px 5px 20px 5px;
 }
 
-/* line 188, ../../sass/sass/skin.scss */
+/* line 194, ../../sass/sass/skin.scss */
 .found-car-price {
   position: absolute;
   right: 0px;
@@ -293,37 +300,44 @@ body {
   background-color: orange;
 }
 
-/* line 195, ../../sass/sass/skin.scss */
+/* line 201, ../../sass/sass/skin.scss */
 .found-car-image {
   width: 200px;
 }
 
-/* line 198, ../../sass/sass/skin.scss */
+/* line 205, ../../sass/sass/skin.scss */
+.found-car-image img {
+  width: 144px;
+  height: 108px;
+  overflow: hidden;
+}
+
+/* line 211, ../../sass/sass/skin.scss */
 .found-car-desc {
   width: 300px;
 }
 
-/* line 202, ../../sass/sass/skin.scss */
+/* line 215, ../../sass/sass/skin.scss */
 .found-car-picture-quantity {
   margin-top: 10px;
   font-size: 12px;
 }
 
-/* line 207, ../../sass/sass/skin.scss */
+/* line 220, ../../sass/sass/skin.scss */
 .car-content {
   margin: 5px 5px 5px 5px;
   min-height: 600px;
   width: 800px;
 }
 
-/* line 213, ../../sass/sass/skin.scss */
+/* line 226, ../../sass/sass/skin.scss */
 .car-header {
   font-size: 20px;
   margin: 15px 15px 15px 15px;
   padding: 15px;
 }
 
-/* line 219, ../../sass/sass/skin.scss */
+/* line 232, ../../sass/sass/skin.scss */
 .car-content-nav-title {
   width: 138px;
   text-align: center;
@@ -333,29 +347,29 @@ body {
   padding: 10px;
 }
 
-/* line 228, ../../sass/sass/skin.scss */
+/* line 241, ../../sass/sass/skin.scss */
 .car-content-nav-title:hover {
   background-color: #82c430;
   color: white;
 }
 
-/* line 233, ../../sass/sass/skin.scss */
+/* line 246, ../../sass/sass/skin.scss */
 .car-content-details-img {
   margin: 10px;
   width: 320px;
 }
 
-/* line 238, ../../sass/sass/skin.scss */
+/* line 251, ../../sass/sass/skin.scss */
 .car-content-details-img > div {
   margin: 10px 3px 4px 0px;
 }
 
-/* line 242, ../../sass/sass/skin.scss */
+/* line 255, ../../sass/sass/skin.scss */
 .car-content-details-list {
   width: 190px;
 }
 
-/* line 246, ../../sass/sass/skin.scss */
+/* line 259, ../../sass/sass/skin.scss */
 .car-content-details-list h2 {
   padding: 10px;
   background-color: orange;
@@ -366,12 +380,12 @@ body {
   font-weight: bold;
 }
 
-/* line 256, ../../sass/sass/skin.scss */
+/* line 269, ../../sass/sass/skin.scss */
 .car-content-details-list ul li {
   margin: 5px;
 }
 
-/* line 260, ../../sass/sass/skin.scss */
+/* line 273, ../../sass/sass/skin.scss */
 .car-content-details-contact {
   background-color: #e7e7e7;
   border: 2px solid #d3d3d1;
@@ -379,12 +393,12 @@ body {
   width: 246px;
 }
 
-/* line 267, ../../sass/sass/skin.scss */
+/* line 280, ../../sass/sass/skin.scss */
 .car-content-details-contact li {
   margin: 10px;
 }
 
-/* line 271, ../../sass/sass/skin.scss */
+/* line 284, ../../sass/sass/skin.scss */
 .car-content-details-contact h2 {
   color: #EC9C1E;
   font-size: 16px;
@@ -392,60 +406,60 @@ body {
   text-decoration: underline;
 }
 
-/* line 278, ../../sass/sass/skin.scss */
+/* line 291, ../../sass/sass/skin.scss */
 .car-content-details-contact p {
   color: #0066CC;
   margin: 10px;
 }
 
-/* line 283, ../../sass/sass/skin.scss */
+/* line 296, ../../sass/sass/skin.scss */
 .car-content-details-contact li {
   margin: 10px 10px 10px 30px;
 }
 
-/* line 287, ../../sass/sass/skin.scss */
+/* line 300, ../../sass/sass/skin.scss */
 .additional {
   width: 600px;
   margin: 15px;
 }
 
-/* line 293, ../../sass/sass/skin.scss */
+/* line 306, ../../sass/sass/skin.scss */
 .additional h2 {
   border-bottom: 1px solid green;
   color: goldenrod;
   font-size: 16px;
 }
 
-/* line 299, ../../sass/sass/skin.scss */
+/* line 312, ../../sass/sass/skin.scss */
 .additional-info ul li {
   margin: 10px;
 }
 
-/* line 303, ../../sass/sass/skin.scss */
+/* line 316, ../../sass/sass/skin.scss */
 .add-info1 {
   width: 400px;
 }
 
-/* line 307, ../../sass/sass/skin.scss */
+/* line 320, ../../sass/sass/skin.scss */
 .add-info2 {
   width: 200px;
 }
 
-/* line 311, ../../sass/sass/skin.scss */
+/* line 324, ../../sass/sass/skin.scss */
 .safety {
   width: 600px;
   height: 200px;
   margin: 15px;
 }
 
-/* line 317, ../../sass/sass/skin.scss */
+/* line 330, ../../sass/sass/skin.scss */
 .safety h2 {
   border-bottom: 1px solid green;
   color: goldenrod;
   font-size: 16px;
 }
 
-/* line 324, ../../sass/sass/skin.scss */
+/* line 337, ../../sass/sass/skin.scss */
 .safety ul li {
   list-style: disc;
   margin: 10px;

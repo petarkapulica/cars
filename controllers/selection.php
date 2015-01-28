@@ -14,12 +14,12 @@ class Selection extends Session {
         $selectionModel = new SelectionModel();
         if (isset($_POST['submit'])) 
         {
-            $carId = $selectionModel->insert_car($_POST);
+            $carId = $selectionModel->insertCar($_POST);
             $photosModel = new PhotosModel();
             $photosModel->upload($carId, $_FILES);
         }
         
-        $this->view->cars = $selectionModel->get_car();
+        $this->view->cars = $selectionModel->getCar();
         
         $this->view->setLayout("admin");
         $this->view->render();
@@ -28,7 +28,7 @@ class Selection extends Session {
     function cartypeAction()
     {
         $selectionModel = new SelectionModel();
-        echo json_encode($selectionModel->get_model());
+        echo json_encode($selectionModel->getModel());
     }
     
     function uploadAction()

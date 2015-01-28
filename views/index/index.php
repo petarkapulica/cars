@@ -131,8 +131,9 @@
                             $html .= $value['price'];
                             $html .= '</span>';
                             $html .= '<a href="/car/details/' . $value["id"]. '"' . ' class="clearfix">';
-                            $html .= '<img src="public/images/cars/';
-                            $html .= $value[0][0]['image_name'];
+                            $html .= '<img src="image?img-name=';
+                            $html .= $value['images'][0];
+                            $html .= '&size=s';
                             $html .= '"></a>';
                             $html .= '<p>';
                             $html .= $value['type'] . ' ' . $value['model_name'] . ' ' . $value['year'];

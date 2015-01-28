@@ -22,13 +22,14 @@
             </div>
             <div class="car-content-details clearfix left">
                 <div class="car-content-details-img left">
-                    <img src="/public/images/cars/<?php echo $this->images[0]["image_name"];?>" />
+                    <img src="../../image?img-name=<?php echo $this->images[0]["image_name"];?>&size=m" />
                     <?php
                     foreach($this->images as $key => $value)
                     {
-                        if($key>1)
+                        if($key > 0 && $key < 4)
                         {
-                        echo '<div class="left"><img src="/public/images/cars/' . $value["image_name"] . '"></div>';
+                        echo '<div class="left"><img src="../../image?img-name=' . $value["image_name"] . 
+                                '&size=thumb"></div>';
                         }
                     }
                     ?>
