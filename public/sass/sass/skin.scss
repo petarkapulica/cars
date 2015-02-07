@@ -248,12 +248,51 @@ body {
     width:320px;
 }
 
-.car-content-details-img > div {
+.main-image {
+    width:340px;
+    position: relative;
+}
+
+.next-image {
+    width: 10%;
+    margin-top: 20%;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    right: 25px;
+}
+
+.previous-image {
+    width: 10%;
+    margin-top: 20%;
+    cursor: pointer;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+.head-image {
+    width: 80%;
+    z-index: $zIndex-10;
+}
+
+.car-content-details-img-wrapper {
+    overflow: hidden;
+    height: 90px;    
+    min-width: 310px;
+}
+
+.car-content-details-img-wrapper:hover {
+    cursor: pointer;
+}
+
+.car-content-details-img-wrapper .gallery-single-img {
     margin: 10px 3px 4px 0px;
 }
 
 .car-content-details-list {
-    width: 190px;
+    width: 150px;
+    margin-left: 30px;
 }
 
 .car-content-details-list h2 {

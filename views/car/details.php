@@ -22,17 +22,25 @@
             </div>
             <div class="car-content-details clearfix left">
                 <div class="car-content-details-img left">
-                    <img src="../../image?img-name=<?php echo $this->images[0]["image_name"];?>&size=m" />
-                    <?php
-                    foreach($this->images as $key => $value)
-                    {
-                        if($key > 0 && $key < 4)
-                        {
-                        echo '<div class="left"><img src="../../image?img-name=' . $value["image_name"] . 
-                                '&size=thumb"></div>';
-                        }
-                    }
-                    ?>
+                    <div class="main-image clearfix">
+                        <div class="previous-image">
+                            <img src="../../public/images/ad-prev.png" />
+                        </div>
+                        <div class="head-image"><img src="../../image?img-name=<?php echo $this->images[0]["image_name"];?>&size=m" /></div>
+                        <div class="next-image">
+                            <img src="../../public/images/ad-next.png" />
+                        </div>
+                    </div>
+                        <div class="car-content-details-img-wrapper clearfix">
+                            <?php
+                            foreach($this->images as $key => $value)
+                            {
+                                echo '<div class="left gallery-single-img">
+                                        <img src="../../image?img-name=' . $value["image_name"] .  '&size=thumb">
+                                    </div>';
+                            }
+                            ?>
+                        </div>
                 </div>
                 <div class="car-content-details-list left">
                     <h2><?php echo $this->car[0]['price'] ?> &#8364</h2>

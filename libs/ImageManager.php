@@ -20,7 +20,6 @@ class ImageManager {
         $newHeight = $this->calculateHeight($newWidth, $Width, $Height);
         $tmpImage = imagecreatetruecolor($newWidth, $newHeight);
         imagecopyresampled($tmpImage, $this->getImageFromString($original), 0, 0, 0, 0, $newWidth, $newHeight, $Width, $Height);
-
         imagejpeg($tmpImage);
         imagejpeg($tmpImage, $derivative);
     }

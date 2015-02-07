@@ -16,6 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="public/js/select-car.js"></script>
     <script type="text/javascript" src="public/js/upload-file.js"></script>
+    <script type="text/javascript" src="public/js/applicationAdmin.js"></script>
 </footer>
 
 

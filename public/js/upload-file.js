@@ -1,8 +1,11 @@
-var UploadPhotos = function(){
+;
+var Cars = Cars || {};
+
+Cars.uploadPhotos = function(){
     $('.add-more-photos').on('click',$.proxy(this.addMore,this));
 };
 
-UploadPhotos.prototype = {
+Cars.uploadPhotos.prototype = {
     
     addMore : function()
     {
@@ -15,7 +18,3 @@ UploadPhotos.prototype = {
     }
     
 };
-
-$(document).ready(function(){
-    new UploadPhotos();
-});

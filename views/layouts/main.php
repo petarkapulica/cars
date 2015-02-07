@@ -52,6 +52,9 @@
 <footer>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
      <script type="text/javascript" src="/public/js/select-car.js"></script>
+     <script type="text/javascript" src="/public/js/application.js"></script>
+     <script type="text/javascript" src="/public/js/gallery.js"></script>
+     <script type="text/javascript" src="/public/js/formValidator.js"></script>
 </footer>
 
 </html>

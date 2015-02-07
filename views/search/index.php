@@ -112,7 +112,13 @@
                 <strong>Cars</strong>
             </div>
             <div class="found-cars-nav">
-                <p> Shown 1 out of <?php echo $this->count;?> results</p>
+                <p> Shown 
+                    <?php
+                    echo $this->count == 0 
+                            ? 0
+                            : 1;
+                    ?>
+                    out of <?php echo $this->count;?> results</p>
                 <p>
                     <?php
                     $perPage = $this->perPage;

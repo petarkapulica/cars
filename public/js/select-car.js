@@ -1,10 +1,13 @@
-var carSelection = function(){
+;
+var Cars = Cars || {};
+
+Cars.carSelection = function(){
   
     $('.js_car_select').on('click', $.proxy(this.OnListClick,this));
     
 };
 
-carSelection.prototype = {
+Cars.carSelection.prototype = {
     
     OnListClick : function(event)
     {   
@@ -31,11 +34,3 @@ carSelection.prototype = {
     }
     
 };
-
-$(document).ready(function(){
-    
-   new carSelection(); 
-   
-});
-
-

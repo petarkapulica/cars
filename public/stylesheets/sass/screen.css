@@ -67,6 +67,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 1, ../../sass/sass/utils.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 10, ../../sass/sass/utils.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 14, ../../sass/sass/utils.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 18, ../../sass/sass/utils.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 22, ../../sass/sass/utils.scss */
+.right {
+  float: right;
+}
+
+/* line 26, ../../sass/sass/utils.scss */
+.left {
+  float: left;
+}
+
+/* line 30, ../../sass/sass/utils.scss */
+.display-inline {
+  display: inline;
+}
+
+/* line 34, ../../sass/sass/utils.scss */
+.inline-list li {
+  float: left;
+}
+
 /* line 2, ../../sass/sass/skin.scss */
 body {
   color: #212121;
@@ -360,16 +405,61 @@ body {
 }
 
 /* line 251, ../../sass/sass/skin.scss */
-.car-content-details-img > div {
+.main-image {
+  width: 340px;
+  position: relative;
+}
+
+/* line 256, ../../sass/sass/skin.scss */
+.next-image {
+  width: 10%;
+  margin-top: 20%;
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  right: 25px;
+}
+
+/* line 265, ../../sass/sass/skin.scss */
+.previous-image {
+  width: 10%;
+  margin-top: 20%;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 274, ../../sass/sass/skin.scss */
+.head-image {
+  width: 80%;
+  z-index: 1000;
+}
+
+/* line 279, ../../sass/sass/skin.scss */
+.car-content-details-img-wrapper {
+  overflow: hidden;
+  height: 90px;
+  min-width: 310px;
+}
+
+/* line 285, ../../sass/sass/skin.scss */
+.car-content-details-img-wrapper:hover {
+  cursor: pointer;
+}
+
+/* line 289, ../../sass/sass/skin.scss */
+.car-content-details-img-wrapper .gallery-single-img {
   margin: 10px 3px 4px 0px;
 }
 
-/* line 255, ../../sass/sass/skin.scss */
+/* line 293, ../../sass/sass/skin.scss */
 .car-content-details-list {
-  width: 190px;
+  width: 150px;
+  margin-left: 30px;
 }
 
-/* line 259, ../../sass/sass/skin.scss */
+/* line 298, ../../sass/sass/skin.scss */
 .car-content-details-list h2 {
   padding: 10px;
   background-color: orange;
@@ -380,12 +470,12 @@ body {
   font-weight: bold;
 }
 
-/* line 269, ../../sass/sass/skin.scss */
+/* line 308, ../../sass/sass/skin.scss */
 .car-content-details-list ul li {
   margin: 5px;
 }
 
-/* line 273, ../../sass/sass/skin.scss */
+/* line 312, ../../sass/sass/skin.scss */
 .car-content-details-contact {
   background-color: #e7e7e7;
   border: 2px solid #d3d3d1;
@@ -393,12 +483,12 @@ body {
   width: 246px;
 }
 
-/* line 280, ../../sass/sass/skin.scss */
+/* line 319, ../../sass/sass/skin.scss */
 .car-content-details-contact li {
   margin: 10px;
 }
 
-/* line 284, ../../sass/sass/skin.scss */
+/* line 323, ../../sass/sass/skin.scss */
 .car-content-details-contact h2 {
   color: #EC9C1E;
   font-size: 16px;
@@ -406,109 +496,64 @@ body {
   text-decoration: underline;
 }
 
-/* line 291, ../../sass/sass/skin.scss */
+/* line 330, ../../sass/sass/skin.scss */
 .car-content-details-contact p {
   color: #0066CC;
   margin: 10px;
 }
 
-/* line 296, ../../sass/sass/skin.scss */
+/* line 335, ../../sass/sass/skin.scss */
 .car-content-details-contact li {
   margin: 10px 10px 10px 30px;
 }
 
-/* line 300, ../../sass/sass/skin.scss */
+/* line 339, ../../sass/sass/skin.scss */
 .additional {
   width: 600px;
   margin: 15px;
 }
 
-/* line 306, ../../sass/sass/skin.scss */
+/* line 345, ../../sass/sass/skin.scss */
 .additional h2 {
   border-bottom: 1px solid green;
   color: goldenrod;
   font-size: 16px;
 }
 
-/* line 312, ../../sass/sass/skin.scss */
+/* line 351, ../../sass/sass/skin.scss */
 .additional-info ul li {
   margin: 10px;
 }
 
-/* line 316, ../../sass/sass/skin.scss */
+/* line 355, ../../sass/sass/skin.scss */
 .add-info1 {
   width: 400px;
 }
 
-/* line 320, ../../sass/sass/skin.scss */
+/* line 359, ../../sass/sass/skin.scss */
 .add-info2 {
   width: 200px;
 }
 
-/* line 324, ../../sass/sass/skin.scss */
+/* line 363, ../../sass/sass/skin.scss */
 .safety {
   width: 600px;
   height: 200px;
   margin: 15px;
 }
 
-/* line 330, ../../sass/sass/skin.scss */
+/* line 369, ../../sass/sass/skin.scss */
 .safety h2 {
   border-bottom: 1px solid green;
   color: goldenrod;
   font-size: 16px;
 }
 
-/* line 337, ../../sass/sass/skin.scss */
+/* line 376, ../../sass/sass/skin.scss */
 .safety ul li {
   list-style: disc;
   margin: 10px;
   height: 20px;
-  float: left;
-}
-
-/* line 1, ../../sass/sass/utils.scss */
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-/* line 10, ../../sass/sass/utils.scss */
-.clearfix {
-  display: inline-block;
-}
-
-/* line 14, ../../sass/sass/utils.scss */
-html[xmlns] .clearfix {
-  display: block;
-}
-
-/* line 18, ../../sass/sass/utils.scss */
-* html .clearfix {
-  height: 1%;
-}
-
-/* line 22, ../../sass/sass/utils.scss */
-.right {
-  float: right;
-}
-
-/* line 26, ../../sass/sass/utils.scss */
-.left {
-  float: left;
-}
-
-/* line 30, ../../sass/sass/utils.scss */
-.display-inline {
-  display: inline;
-}
-
-/* line 34, ../../sass/sass/utils.scss */
-.inline-list li {
   float: left;
 }
 
