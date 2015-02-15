@@ -124,10 +124,9 @@ body {
     width:250px;
     height:160px;
     opacity: 0.5;
-}
-
-.header-pic:hover {
-    opacity: 1;
+    &:hover{
+        opacity:1;
+    }
 }
 
 .header-title {
@@ -180,10 +179,10 @@ body {
     padding: 5px;
     margin-bottom: 10px;
     min-height: 150px;
-}
-
-.found-car:hover {
-    background-color: $car-hover-color;
+    &:hover
+        {
+        background-color: $car-hover-color;
+    }
 }
 
 .found-car-header {
@@ -236,11 +235,10 @@ body {
     color:$car-nav-color;
     border: 1px solid $car-nav-color;
     padding: 10px;
-}
-
-.car-content-nav-title:hover {
-    background-color:#82c430;
-    color: white;
+    &:hover{
+        background-color:#82c430;
+        color: white;
+    }
 }
 
 .car-content-details-img {
@@ -249,31 +247,46 @@ body {
 }
 
 .main-image {
-    width:340px;
+    width:320px;
     position: relative;
 }
 
-.next-image {
-    width: 10%;
-    margin-top: 20%;
-    cursor: pointer;
+.zoom-img {
     position: absolute;
-    top: -5px;
-    right: 25px;
+    top: 15%;
+    left: 15%;
+    width: 66%;
+    height: 66%;
+    &:hover
+    {
+        cursor: zoom-in;
+    }
 }
 
-.previous-image {
-    width: 10%;
-    margin-top: 20%;
+.next-image , .next-image-big {
+    margin-top: 30%;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    bottom: 0px;
+}
+
+.previous-image , .previous-image-big {
+    margin-top: 30%;
     cursor: pointer;
     position: absolute;
     top:0px;
     left:0px;
+    bottom: 0px;
 }
 
-.head-image {
-    width: 80%;
-    z-index: $zIndex-10;
+.count-image {
+    position: absolute;
+    bottom: 10%;
+    left:5%;
+    font-size: $font-size-xl;
+    background-color: orange;
 }
 
 .car-content-details-img-wrapper {
@@ -282,7 +295,7 @@ body {
     min-width: 310px;
 }
 
-.car-content-details-img-wrapper:hover {
+.gallery-single-img {
     cursor: pointer;
 }
 
@@ -378,4 +391,16 @@ body {
     margin: 10px;
     height: 20px;
     float: left;
+}
+
+.PopupPanel
+{
+    border: solid 1px black;
+    position: fixed;
+    left: 15%;
+    top: 0%;
+    background-color: white;
+    z-index: $zIndex-10;
+    height: 600px;
+    width: 800;
 }

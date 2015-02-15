@@ -10,6 +10,10 @@ class Car extends Session {
 
     function detailsAction($params)
     {
+        if(!$params)
+        {
+             require_once 'views/error/index.php';die;
+        }
         $carId  = $params[0];
         $car = new CarModel();
         $this->view->car = $car->getDetails($carId);

@@ -186,7 +186,7 @@
                 <img src="http://carmodification.wnngroup.com/wp-content/uploads/2014/12/cartoon-car-pics-9.jpg"/>
             </div>
             <div>
-                <img src="http://thumbs.dreamstime.com/x/cartoon-car-6130011.jpg"/>
+                <img src="http://freedesignfile.com/upload/2013/02/Cartoon-cars-3.jpg"/>
             </div>
             <div>
                 <img src="http://www.ochs4paws.org/wp-content/uploads/car-wash.jpg"/>

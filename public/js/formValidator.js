@@ -57,36 +57,9 @@ Cars.checkForm.prototype = {
         var element = $("input[name='numberlow']");
         var condition = pricelow > pricehigh;
         var message = 'Invalid price ratio';
+        
         Cars.Validator.validate(element, condition, message);
     }
     
 };
 
-Cars.Validator = {
-    
-    status : true,
-    
-    validate : function(element, condition, message)
-    {        
-        if( condition )
-        {   
-            Cars.Error.addError(element, message);
-            this.status = false;
-        }
-        else
-        {
-            element.removeAttr( 'style' );
-        }
-    }
-    
-};
-
-Cars.Error = {
-    
-    addError : function(element, message)
-    {
-        element.css("background-color", "red");
-        element.before('<div class="js_error">' + message + '</div>');
-    }
-    
-};

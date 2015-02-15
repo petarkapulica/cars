@@ -15,9 +15,6 @@ class Search extends Session {
         $this->view->cars = $selectionModel->getCar();
         
         $searchedCars = new CarModel();
-        
-        $this->view->cars = $searchedCars->searchCars($_GET);
-        
         $this->view->searchedCars = $searchedCars->searchCars($_GET);
         $this->view->count = $searchedCars->carsNumber;
         $this->view->perPage = $searchedCars->perPage;

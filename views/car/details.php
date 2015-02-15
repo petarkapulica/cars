@@ -26,18 +26,28 @@
                         <div class="previous-image">
                             <img src="../../public/images/ad-prev.png" />
                         </div>
-                        <div class="head-image"><img src="../../image?img-name=<?php echo $this->images[0]["image_name"];?>&size=m" /></div>
+                        <div class="head-image">
+                            <img src="../../image?img-name=<?php echo $this->images[0]["image_name"];?>&size=m" />
+                            <div class="zoom-img"></div>
+                        </div>
                         <div class="next-image">
                             <img src="../../public/images/ad-next.png" />
+                        </div>
+                        <div class="count-image">
+                            <?php
+                            echo '1/' . sizeof($this->images);
+                            ?>
                         </div>
                     </div>
                         <div class="car-content-details-img-wrapper clearfix">
                             <?php
+                            $js_counter = 1;
                             foreach($this->images as $key => $value)
                             {
                                 echo '<div class="left gallery-single-img">
-                                        <img src="../../image?img-name=' . $value["image_name"] .  '&size=thumb">
+                                        <img data="js_counter' . $js_counter . '" src="../../image?img-name=' . $value["image_name"] .  '&size=thumb">
                                     </div>';
+                                $js_counter++;
                             }
                             ?>
                         </div>
@@ -151,7 +161,7 @@
                 <img src="http://www.beststylez.com/wp-content/uploads/2012/09/Disney-Cartoons-Cover-Timeline-39.jpg"/>
             </div>
             <div>
-                <img src="http://www.alliancegroupusa.com/wp-content/uploads/2014/08/funny-yellow-and-blue-cartoon-car-old-cartoon-car-characters-.jpg"/>
+                <img src="http://freedesignfile.com/upload/2013/02/Cartoon-cars-2.jpg"/>
             </div>
             <div>
                 <img src="http://thumbs.dreamstime.com/z/funny-red-car-cartoon-isolated-white-42961192.jpg"/>
