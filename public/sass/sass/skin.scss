@@ -393,14 +393,21 @@ body {
     float: left;
 }
 
-.PopupPanel
+.popup-panel {
+    position: fixed;
+    background-color: rgba(144,144,225,0.5);
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.popup-panel-image
 {
     border: solid 1px black;
     position: fixed;
     left: 15%;
     top: 0%;
-    background-color: white;
-    z-index: $zIndex-10;
     height: 600px;
     width: 800;
 }

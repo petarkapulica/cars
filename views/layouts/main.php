@@ -17,15 +17,15 @@
 
     <div class="navigation clearfix">
         <ul class="list">
-            <li><a href="main">Main</a></li>
-            <li><a href="newcars">New cars</a></li>
-            <li><a href="stores">Stores</a></li>
-            <li><a href="news">News</a></li>
-            <li><a href="advice">Advice</a></li>
-            <li><a href="tires">Tires</a></li>
-            <li><a href="discuss">Discussion</a></li>
-            <li><a href="market">Market</a></li>
-            <li><a href="profile">My profile</a></li>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">New cars</a></li>
+            <li><a href="#">Stores</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Advice</a></li>
+            <li><a href="#">Tires</a></li>
+            <li><a href="#">Discussion</a></li>
+            <li><a href="#">Market</a></li>
+            <li><a href="#">My profile</a></li>
 
         </ul>
     </div>
@@ -58,6 +58,7 @@
      <script type="text/javascript" src="/public/js/formValidator.js"></script>
      <script type="text/javascript" src="/public/js/validator.js"></script>
      <script type="text/javascript" src="/public/js/error.js"></script>
+     <script type="text/javascript" src="/public/js/galleryExpanded.js"></script>
 </footer>
 
 </html>
