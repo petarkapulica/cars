@@ -3,7 +3,7 @@
 class Model extends PDO {
 
     function __construct() {
-         $this->db = new PDO('mysql:host=localhost;dbname=cars','root','111');
+         $this->db = new PDO('mysql:host=localhost;dbname=cars','root','perakojot');
     }
 
 }
