@@ -1,2 +1,1 @@
 Automobili
-Ovo je vezba
